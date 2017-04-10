@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: eurekademo
+  cloud:
+    config:
+      enabled: false

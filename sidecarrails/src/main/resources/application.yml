@@ -1,0 +1,11 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: ${side-app-name}
+
+sidecarrails:
+  port: ${port:3000}
+  health-uri: http://localhost:${sidecarrails.port}/${health-uri:health.json}
+  home-page-uri: http://localhost:${sidecarrails.port}/
